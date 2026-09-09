@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700&display=swap');
+
+:root {
+  --bg: #1a0f1f;
+  --panel: rgba(38,22,42,0.78);
+  --panel-solid: #22131f;
+  --border: rgba(255,122,89,0.2);
+  --accent: #ff7a59;
+  --accent-2: #ffc857;
+  --text: #fff3ec;
+  --text-dim: #cba9a6;
+  --radius: 20px;
+}
+
+* , *::before, *::after { box-sizing: border-box; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body { margin: 0; min-height: 100vh; background: var(--bg); color: var(--text); font-family: 'Nunito', Arial, sans-serif; }
+#sitebg { position: fixed; inset: 0; width: 100%; height: 100%; z-index: -1; display: block; }
+a { color: inherit; }
+
+.topbar { display: flex; align-items: center; gap: 14px; max-width: 1200px; margin: 22px auto 0; padding: 10px 18px; }
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
+.brand-badge { width: 42px; height: 42px; border-radius: var(--radius); display: flex; align-items: center; justify-content: center; font-family: 'Baloo 2', sans-serif; font-weight: 800; font-size: 13px; background: linear-gradient(135deg, var(--accent), var(--accent-2)); color: #05060a; transition: transform 0.15s ease; }
+.brand:hover .brand-badge { transform: scale(1.06); }
+.brand-name { font-family: 'Baloo 2', sans-serif; font-weight: 700; font-size: 19px; letter-spacing: 0.3px; }
+
+.nav-pill { margin-left: auto; display: flex; gap: 4px; background: var(--panel-solid); border: 1px solid var(--border); padding: 6px; border-radius: 999px; }
+.nav-pill a { text-decoration: none; color: var(--text-dim); font-size: 14px; font-weight: 500; padding: 8px 16px; border-radius: 999px; transition: background 0.15s ease, color 0.15s ease; white-space: nowrap; }
+.nav-pill a:hover, .nav-pill a.active { background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--text); }
+
+.search-wrap { max-width: 640px; margin: 34px auto 8px; padding: 0 18px; }
+.search-wrap input { width: 100%; padding: 14px 20px; font-size: 15px; border-radius: var(--radius); border: 1px solid var(--border); background: var(--panel-solid); color: var(--text); outline: none; transition: border-color 0.15s ease, box-shadow 0.15s ease; font-family: 'Nunito', Arial, sans-serif; }
+.search-wrap input::placeholder { color: var(--text-dim); }
+.search-wrap input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 22%, transparent); }
+
+.section-heading { max-width: 1200px; margin: 30px auto 14px; padding: 0 18px; font-family: 'Baloo 2', sans-serif; font-size: 14px; font-weight: 600; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+
+.game-grid { max-width: 1200px; margin: 0 auto; padding: 0 18px 40px; display: grid; grid-template-columns: repeat(auto-fill, minmax(132px, 1fr)); gap: 14px; }
+.game-card { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 10px; text-decoration: none; color: var(--text); padding: 14px 10px; border-radius: var(--radius); background: var(--panel); border: 1px solid rgba(255,200,87,0.28); transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease; min-height: 150px; }
+.game-card:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 10px 24px rgba(0,0,0,0.4), 0 0 0 1px color-mix(in srgb, var(--accent) 30%, transparent); }
+.game-card img { width: 76px; height: 76px; object-fit: cover; border-radius: calc(var(--radius) - 2px); background: var(--panel-solid); }
+.game-card p { margin: 0; font-size: 13px; font-weight: 600; text-align: center; line-height: 1.25; font-family: 'Nunito', Arial, sans-serif; }
+.game-card.suggest { background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 18%, transparent), color-mix(in srgb, var(--accent-2) 12%, transparent)); border-style: dashed; }
+
+.no-results { text-align: center; color: var(--text-dim); padding: 40px 0; display: none; }
+
+.game-page { max-width: 1000px; margin: 24px auto 60px; padding: 0 18px; }
+.game-frame-wrap { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: #000; box-shadow: 0 20px 50px rgba(0,0,0,0.45); }
+.game-frame-wrap iframe { width: 100%; height: 70vh; min-height: 420px; border: none; display: block; }
+.game-title-row { display: flex; align-items: center; gap: 14px; margin: 18px 0 8px; }
+.game-title-row img { width: 52px; height: 52px; border-radius: var(--radius); object-fit: cover; }
+.game-title-row h1 { font-family: 'Baloo 2', sans-serif; font-size: 22px; margin: 0; letter-spacing: 0.3px; }
+.tag-row { display: flex; gap: 8px; flex-wrap: wrap; margin: 10px 0 22px; }
+.tag-row span { font-size: 12px; padding: 5px 12px; border-radius: 999px; background: var(--panel-solid); border: 1px solid var(--border); color: var(--text-dim); }
+
+.article { background: var(--panel); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px 28px; line-height: 1.75; color: var(--text); }
+.article h2 { font-family: 'Baloo 2', sans-serif; font-size: 17px; margin: 26px 0 10px; color: var(--text); letter-spacing: 0.2px; }
+.article h2:first-child { margin-top: 0; }
+.article p { margin: 0 0 12px; font-size: 14.5px; font-family: 'Nunito', Arial, sans-serif; }
+
+.simple-page { max-width: 800px; margin: 40px auto 60px; padding: 0 18px; line-height: 1.75; }
+.simple-page h1 { font-family: 'Baloo 2', sans-serif; }
+.simple-page .article { padding: 26px 28px; }
+
+footer.site-footer { max-width: 1200px; margin: 30px auto 0; padding: 26px 18px 40px; color: var(--text-dim); font-size: 13px; border-top: 1px solid var(--border); text-align: center; }
+footer.site-footer .footer-links { display: flex; flex-wrap: wrap; justify-content: center; gap: 6px 4px; margin-top: 10px; }
+footer.site-footer .footer-links a { text-decoration: none; color: var(--text-dim); padding: 4px 8px; }
+footer.site-footer .footer-links a:hover { color: var(--text); }
+
+@media (max-width: 640px) {
+  .topbar { flex-wrap: wrap; }
+  .nav-pill { order: 3; width: 100%; overflow-x: auto; margin-left: 0; }
+  .game-grid { grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); }
+  .game-card img { width: 60px; height: 60px; }
+}

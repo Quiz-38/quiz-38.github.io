@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunset Arcade</title>
+<meta name="description" content="Sunset Arcade is a free browser game hub — search or browse the grid and start playing instantly, no downloads or accounts required.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://quiz-38.github.io/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="main.css">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sunset Arcade">
+<meta property="og:description" content="Sunset Arcade is a free browser game hub — search or browse the grid and start playing instantly, no downloads or accounts required.">
+<meta property="og:url" content="https://quiz-38.github.io/">
+<meta name="twitter:card" content="summary">
+
+<script defer src="search.js"></script>
+</head>
+<body>
+<script src="bg-sunset.js"></script>
+<div class="topbar">
+  <a href="/" class="brand">
+    <span class="brand-badge">SA</span>
+    <span class="brand-name">Sunset Arcade</span>
+  </a>
+  <nav class="nav-pill"><a href="/" class="active">Home</a><a href="about.html">About</a><a href="privacy-policy.html">Privacy</a><a href="dmca.html">DMCA</a><a href="contact.html">Contact</a></nav>
+</div>
+
+<div class="search-wrap">
+  <input type="text" id="searchBar" onkeyup="searchGames()" placeholder="Search for a game...">
+</div>
+<h2 class="section-heading">All Games</h2>
+<div class="game-grid">
+    <a href="contact.html" class="game-card suggest">
+      <p>Suggest a game</p>
+    </a>
+    <a href="1v1-lol.html" class="game-card" data-name="1v1.LOL">
+      <img src="https://icons-5.org/g4m3s/1v1-lol/splash.png" alt="1v1.LOL" loading="lazy">
+      <p>1v1.LOL</p>
+    </a>
+    <a href="1-on-1-soccer.html" class="game-card" data-name="1 on 1 Soccer">
+      <img src="https://icons-5.org/g4m3s/1v1-soccer/logo.jpg" alt="1 on 1 Soccer" loading="lazy">
+      <p>1 on 1 Soccer</p>
+    </a>
+    <a href="3d-bowling.html" class="game-card" data-name="3D Bowling">
+      <img src="https://icons-5.org/g4m3s/3d-bowling/logo.jpg" alt="3D Bowling" loading="lazy">
+      <p>3D Bowling</p>
+    </a>
+    <a href="8-ball.html" class="game-card" data-name="8 Ball">
+      <img src="https://icons-5.org/g4m3s/8-ball/tmp/8BallBilliardsClassicTeaser.jpg" alt="8 Ball" loading="lazy">
+      <p>8 Ball</p>
+    </a>
+    <a href="10-minutes-till-dawn.html" class="game-card" data-name="10 Minutes Till Dawn">
+      <img src="https://icons-5.org/g4m3s/10-minutes-till-dawn/splash.png" alt="10 Minutes Till Dawn" loading="lazy">
+      <p>10 Minutes Till Dawn</p>
+    </a>
+    <a href="2048.html" class="game-card" data-name="2048">
+      <img src="https://icons-5.org/g4m3s/2048/thumb.png" alt="2048" loading="lazy">
+      <p>2048</p>
+    </a>
+    <a href="ages-of-conflict.html" class="game-card" data-name="Ages of Conflict">
+      <img src="https://icons-5.org/g4m3s/ages-of-conflict/splash.jpg" alt="Ages of Conflict" loading="lazy">
+      <p>Ages of Conflict</p>
+    </a>
+    <a href="among-us.html" class="game-card" data-name="Among Us">
+      <img src="https://icons-5.org/g4m3s/among-us/red.png" alt="Among Us" loading="lazy">
+      <p>Among Us</p>
+    </a>
+    <a href="angry-sharks.html" class="game-card" data-name="Angry Sharks">
+      <img src="https://icons-5.org/g4m3s/angry-sharks/assets/favicon/icon-512x512.png" alt="Angry Sharks" loading="lazy">
+      <p>Angry Sharks</p>
+    </a>
+    <a href="sandboxels.html" class="game-card" data-name="Sandboxels">
+      <img src="https://icons-5.org/g4m3s/sandboxels/icons/icon.jpg" alt="Sandboxels" loading="lazy">
+      <p>Sandboxels</p>
+    </a>
+    <a href="aquapark-slides.html" class="game-card" data-name="Aquapark Slides">
+      <img src="https://icons-5.org/g4m3s/aquapark-slides/splash.png" alt="Aquapark Slides" loading="lazy">
+      <p>Aquapark Slides</p>
+    </a>
+    <a href="arcane-archer.html" class="game-card" data-name="Arcane Archer">
+      <img src="https://icons-5.org/g4m3s/arcane-archer/logo.avif" alt="Arcane Archer" loading="lazy">
+      <p>Arcane Archer</p>
+    </a>
+    <a href="awesome-tanks-2.html" class="game-card" data-name="Awesome Tanks 2">
+      <img src="https://icons-5.org/g4m3s/awesome-tanks-2/logo.jpg" alt="Awesome Tanks 2" loading="lazy">
+      <p>Awesome Tanks 2</p>
+    </a>
+    <a href="backrooms.html" class="game-card" data-name="Backrooms">
+      <img src="https://icons-5.org/g4m3s/backrooms/img/splash.jpg" alt="Backrooms" loading="lazy">
+      <p>Backrooms</p>
+    </a>
+    <a href="backrooms-2d.html" class="game-card" data-name="Backrooms 2D">
+      <img src="https://icons-5.org/g4m3s/backrooms-2d/Backrooms2D.png" alt="Backrooms 2D" loading="lazy">
+      <p>Backrooms 2D</p>
+    </a>
+    <a href="bacon-may-die.html" class="game-card" data-name="Bacon May Die">
+      <img src="https://icons-5.org/g4m3s/bacon-may-die/BaconMayDie.png" alt="Bacon May Die" loading="lazy">
+      <p>Bacon May Die</p>
+    </a>
+    <a href="bad-ice-cream.html" class="game-card" data-name="Bad Ice Cream">
+      <img src="https://icons-5.org/g4m3s/bad-ice-cream/bad-ice-cream.png" alt="Bad Ice Cream" loading="lazy">
+      <p>Bad Ice Cream</p>
+    </a>
+    <a href="baldis-basics.html" class="game-card" data-name="Baldi's Basics">
+      <img src="https://icons-5.org/g4m3s/baldis-basics/splash.png" alt="Baldi's Basics" loading="lazy">
+      <p>Baldi's Basics</p>
+    </a>
+    <a href="ballistic.html" class="game-card" data-name="Ballistic">
+      <img src="https://icons-5.org/g4m3s/ballistic/logo.jpg" alt="Ballistic" loading="lazy">
+      <p>Ballistic</p>
+    </a>
+    <a href="basket-random.html" class="game-card" data-name="Basket Random">
+      <img src="https://icons-5.org/g4m3s/basket-random/BasketRandom.png" alt="Basket Random" loading="lazy">
+      <p>Basket Random</p>
+    </a>
+    <a href="basketball-stars.html" class="game-card" data-name="Basketball Stars">
+      <img src="https://icons-5.org/g4m3s/basketball-stars/assets/images/basketball-stars.png" alt="Basketball Stars" loading="lazy">
+      <p>Basketball Stars</p>
+    </a>
+    <a href="big-tower-tiny-square.html" class="game-card" data-name="Big Tower Tiny Square">
+      <img src="https://icons-5.org/g4m3s/big-tower-tiny-square/images.png" alt="Big Tower Tiny Square" loading="lazy">
+      <p>Big Tower Tiny Square</p>
+    </a>
+    <a href="bitcoin-clicker.html" class="game-card" data-name="Bitcoin Clicker">
+      <img src="https://icons-5.org/g4m3s/bitcoin-clicker/BitcoinClicker.png" alt="Bitcoin Clicker" loading="lazy">
+      <p>Bitcoin Clicker</p>
+    </a>
+    <a href="bitlife.html" class="game-card" data-name="BitLife">
+      <img src="https://icons-5.org/g4m3s/bl/logo.png" alt="BitLife" loading="lazy">
+      <p>BitLife</p>
+    </a>
+    <a href="bloonstd-4.html" class="game-card" data-name="BloonsTD 4">
+      <img src="https://icons-5.org/g4m3s/bloonstd-4/logo.jpg" alt="BloonsTD 4" loading="lazy">
+      <p>BloonsTD 4</p>
+    </a>
+    <a href="bloxorz.html" class="game-card" data-name="Bloxorz">
+      <img src="https://icons-5.org/g4m3s/bloxors/block.png" alt="Bloxorz" loading="lazy">
+      <p>Bloxorz</p>
+    </a>
+    <a href="blumgi-rocket.html" class="game-card" data-name="Blumgi Rocket">
+      <img src="https://icons-5.org/g4m3s/blumgi-rocket/thumb.png" alt="Blumgi Rocket" loading="lazy">
+      <p>Blumgi Rocket</p>
+    </a>
+    <a href="blumgi-slime.html" class="game-card" data-name="Blumgi Slime">
+      <img src="https://icons-5.org/g4m3s/blumgi-slime/logo.jpg" alt="Blumgi Slime" loading="lazy">
+      <p>Blumgi Slime</p>
+    </a>
+    <a href="bob-the-robber-2.html" class="game-card" data-name="Bob the Robber 2">
+      <img src="https://icons-5.org/g4m3s/bob-the-robber-2/splash.jpeg" alt="Bob the Robber 2" loading="lazy">
+      <p>Bob the Robber 2</p>
+    </a>
+    <a href="bottle-flip.html" class="game-card" data-name="Bottle Flip">
+      <img src="https://icons-5.org/g4m3s/bottle-flip/icons/icon-256.png" alt="Bottle Flip" loading="lazy">
+      <p>Bottle Flip</p>
+    </a>
+    <a href="boxel-rebound.html" class="game-card" data-name="Boxel Rebound">
+      <img src="https://icons-5.org/g4m3s/boxel-rebound/logo.jpg" alt="Boxel Rebound" loading="lazy">
+      <p>Boxel Rebound</p>
+    </a>
+    <a href="boxing-random.html" class="game-card" data-name="Boxing Random">
+      <img src="https://icons-5.org/g4m3s/boxing-random/512x512.jpg" alt="Boxing Random" loading="lazy">
+      <p>Boxing Random</p>
+    </a>
+    <a href="cars-simulator.html" class="game-card" data-name="Cars Simulator">
+      <img src="https://icons-5.org/g4m3s/cars-simulator/splash.png" alt="Cars Simulator" loading="lazy">
+      <p>Cars Simulator</p>
+    </a>
+    <a href="circloo.html" class="game-card" data-name="CircloO">
+      <img src="https://icons-5.org/g4m3s/circlo/img/download.png" alt="CircloO" loading="lazy">
+      <p>CircloO</p>
+    </a>
+    <a href="circloo-2.html" class="game-card" data-name="CircloO 2">
+      <img src="https://icons-5.org/g4m3s/circlo-2/thumv.png" alt="CircloO 2" loading="lazy">
+      <p>CircloO 2</p>
+    </a>
+    <a href="climb-over-it.html" class="game-card" data-name="Climb Over It">
+      <img src="https://icons-5.org/g4m3s/climb-over-it/thumb.jpg" alt="Climb Over It" loading="lazy">
+      <p>Climb Over It</p>
+    </a>
+    <a href="cluster-rush.html" class="game-card" data-name="Cluster Rush">
+      <img src="https://icons-5.org/g4m3s/cluster-rush/splash.png" alt="Cluster Rush" loading="lazy">
+      <p>Cluster Rush</p>
+    </a>
+    <a href="cookie-clicker.html" class="game-card" data-name="Cookie Clicker">
+      <img src="https://icons-5.org/g4m3s/cookie-clicker/thumb.png" alt="Cookie Clicker" loading="lazy">
+      <p>Cookie Clicker</p>
+    </a>
+    <a href="core-ball.html" class="game-card" data-name="Core Ball">
+      <img src="https://icons-5.org/g4m3s/core-ball/pr_source.png" alt="Core Ball" loading="lazy">
+      <p>Core Ball</p>
+    </a>
+    <a href="crazy-cars.html" class="game-card" data-name="Crazy Cars">
+      <img src="https://icons-5.org/g4m3s/crazy-cars/logo.jpg" alt="Crazy Cars" loading="lazy">
+      <p>Crazy Cars</p>
+    </a>
+    <a href="crossy-road.html" class="game-card" data-name="Crossy Road">
+      <img src="https://icons-5.org/g4m3s/crossy-road/crossyroad.png" alt="Crossy Road" loading="lazy">
+      <p>Crossy Road</p>
+    </a>
+    <a href="cs-go-clicker.html" class="game-card" data-name="CS:GO Clicker">
+      <img src="https://icons-5.org/g4m3s/csgo-clicker/logo.png" alt="CS:GO Clicker" loading="lazy">
+      <p>CS:GO Clicker</p>
+    </a>
+    <a href="deal-or-no-deal.html" class="game-card" data-name="Deal or No Deal">
+      <img src="https://icons-5.org/g4m3s/deal-or-no-deal/index.jpg" alt="Deal or No Deal" loading="lazy">
+      <p>Deal or No Deal</p>
+    </a>
+    <a href="death-run-3d.html" class="game-card" data-name="Death Run 3D">
+      <img src="https://icons-5.org/g4m3s/death-run-3d/img/death.png" alt="Death Run 3D" loading="lazy">
+      <p>Death Run 3D</p>
+    </a>
+    <a href="doge-miner.html" class="game-card" data-name="Doge Miner">
+      <img src="https://icons-5.org/g4m3s/doge-miner/img/dogeminer_300x300.png" alt="Doge Miner" loading="lazy">
+      <p>Doge Miner</p>
+    </a>
+    <a href="doodle-jump.html" class="game-card" data-name="Doodle Jump">
+      <img src="https://icons-5.org/g4m3s/doodle-jump/doodle.png" alt="Doodle Jump" loading="lazy">
+      <p>Doodle Jump</p>
+    </a>
+    <a href="draw-the-hill.html" class="game-card" data-name="Draw the Hill">
+      <img src="https://icons-5.org/g4m3s/draw-the-hill/icons/icon-512.png" alt="Draw the Hill" loading="lazy">
+      <p>Draw the Hill</p>
+    </a>
+    <a href="drift-boss.html" class="game-card" data-name="Drift Boss">
+      <img src="https://icons-5.org/g4m3s/drift-boss/drift-boss.png" alt="Drift Boss" loading="lazy">
+      <p>Drift Boss</p>
+    </a>
+    <a href="drive-mad.html" class="game-card" data-name="Drive Mad">
+      <img src="https://icons-5.org/g4m3s/drive-mad/logo.jpg" alt="Drive Mad" loading="lazy">
+      <p>Drive Mad</p>
+    </a>
+    <a href="duck-life-4.html" class="game-card" data-name="Duck Life 4">
+      <img src="https://icons-5.org/g4m3s/duck-life-4/splash.jpg" alt="Duck Life 4" loading="lazy">
+      <p>Duck Life 4</p>
+    </a>
+    <a href="elastic-face.html" class="game-card" data-name="Elastic Face">
+      <img src="https://icons-5.org/g4m3s/elastic-face/ElasticFace.png" alt="Elastic Face" loading="lazy">
+      <p>Elastic Face</p>
+    </a>
+    <a href="fireboy-and-watergirl.html" class="game-card" data-name="Fireboy and Watergirl">
+      <img src="https://icons-5.org/g4m3s/fire-boy-water-girl/logo.jpeg" alt="Fireboy and Watergirl" loading="lazy">
+      <p>Fireboy and Watergirl</p>
+    </a>
+    <a href="flappy-bird.html" class="game-card" data-name="Flappy Bird">
+      <img src="https://icons-5.org/g4m3s/flappy-bird/assets/thumb.png" alt="Flappy Bird" loading="lazy">
+      <p>Flappy Bird</p>
+    </a>
+    <a href="flash-tetris.html" class="game-card" data-name="Flash Tetris">
+      <img src="https://icons-5.org/g4m3s/flash-tetris/flashtetris.png" alt="Flash Tetris" loading="lazy">
+      <p>Flash Tetris</p>
+    </a>
+    <a href="five-nights-at-freddys.html" class="game-card" data-name="Five Nights at Freddy's">
+      <img src="https://icons-5.org/g4m3s/fnaf/logo.jpg" alt="Five Nights at Freddy's" loading="lazy">
+      <p>Five Nights at Freddy's</p>
+    </a>
+    <a href="football-legends.html" class="game-card" data-name="Football Legends">
+      <img src="https://icons-5.org/g4m3s/football-legends/logo.jpg" alt="Football Legends" loading="lazy">
+      <p>Football Legends</p>
+    </a>
+    <a href="football-strike.html" class="game-card" data-name="Football Strike">
+      <img src="https://icons-5.org/g4m3s/football-strike/logo.jpg" alt="Football Strike" loading="lazy">
+      <p>Football Strike</p>
+    </a>
+    <a href="fruit-ninja.html" class="game-card" data-name="Fruit Ninja">
+      <img src="https://icons-5.org/g4m3s/fruit-ninja/logo.jpg" alt="Fruit Ninja" loading="lazy">
+      <p>Fruit Ninja</p>
+    </a>
+    <a href="funny-shooter-2.html" class="game-card" data-name="Funny Shooter 2">
+      <img src="https://icons-5.org/g4m3s/funny-shooter-2/thumb.png" alt="Funny Shooter 2" loading="lazy">
+      <p>Funny Shooter 2</p>
+    </a>
+    <a href="geometry-dash.html" class="game-card" data-name="Geometry Dash">
+      <img src="https://icons-5.org/g4m3s/geometry-dash/geoscratchicon.png" alt="Geometry Dash" loading="lazy">
+      <p>Geometry Dash</p>
+    </a>
+    <a href="getaway-shootout.html" class="game-card" data-name="Getaway Shootout">
+      <img src="https://icons-5.org/g4m3s/getaway-shootout/img/images.jpg" alt="Getaway Shootout" loading="lazy">
+      <p>Getaway Shootout</p>
+    </a>
+    <a href="getting-over-it.html" class="game-card" data-name="Getting Over It">
+      <img src="https://icons-5.org/g4m3s/getting-over-it/GettingOverIt.png" alt="Getting Over It" loading="lazy">
+      <p>Getting Over It</p>
+    </a>
+    <a href="google-feud.html" class="game-card" data-name="Google Feud">
+      <img src="https://icons-5.org/g4m3s/google-feud/splash.png" alt="Google Feud" loading="lazy">
+      <p>Google Feud</p>
+    </a>
+    <a href="idle-breakout.html" class="game-card" data-name="Idle Breakout">
+      <img src="https://icons-5.org/g4m3s/idle-breakout/img/thumbnail.png" alt="Idle Breakout" loading="lazy">
+      <p>Idle Breakout</p>
+    </a>
+    <a href="idle-mining.html" class="game-card" data-name="Idle Mining">
+      <img src="https://icons-5.org/g4m3s/idle-mining/logo.jpg" alt="Idle Mining" loading="lazy">
+      <p>Idle Mining</p>
+    </a>
+    <a href="iron-snout.html" class="game-card" data-name="Iron Snout">
+      <img src="https://icons-5.org/g4m3s/iron-snout/IronSnout.png" alt="Iron Snout" loading="lazy">
+      <p>Iron Snout</p>
+    </a>
+    <a href="justfall-lol.html" class="game-card" data-name="JustFall.LOL">
+      <img src="https://icons-5.org/g4m3s/just-fall/unnamed.png" alt="JustFall.LOL" loading="lazy">
+      <p>JustFall.LOL</p>
+    </a>
+    <a href="learn-to-fly.html" class="game-card" data-name="Learn to Fly">
+      <img src="https://icons-5.org/g4m3s/learn-to-fly/learntofly.png" alt="Learn to Fly" loading="lazy">
+      <p>Learn to Fly</p>
+    </a>
+    <a href="mario-bros.html" class="game-card" data-name="Mario Bros">
+      <img src="https://icons-5.org/g4m3s/mario-bros/NewSuperMarioBros.png" alt="Mario Bros" loading="lazy">
+      <p>Mario Bros</p>
+    </a>
+    <a href="merge-round-racers.html" class="game-card" data-name="Merge Round Racers">
+      <img src="https://icons-5.org/g4m3s/merge-round-racers/splash.png" alt="Merge Round Racers" loading="lazy">
+      <p>Merge Round Racers</p>
+    </a>
+    <a href="minecraft-1-5.html" class="game-card" data-name="Minecraft 1.5">
+      <img src="https://icons-5.org/g4m3s/minecraft-15/splash.jpeg" alt="Minecraft 1.5" loading="lazy">
+      <p>Minecraft 1.5</p>
+    </a>
+    <a href="minecraft-1-8.html" class="game-card" data-name="Minecraft 1.8">
+      <img src="https://icons-5.org/g4m3s/minecraft-18/splash.png" alt="Minecraft 1.8" loading="lazy">
+      <p>Minecraft 1.8</p>
+    </a>
+    <a href="mini-putt.html" class="game-card" data-name="Mini-putt">
+      <img src="https://icons-5.org/g4m3s/miniputt/miniputt.png" alt="Mini-putt" loading="lazy">
+      <p>Mini-putt</p>
+    </a>
+    <a href="motox3m.html" class="game-card" data-name="MotoX3M">
+      <img src="https://icons-5.org/g4m3s/motox3m/splash.jpg" alt="MotoX3M" loading="lazy">
+      <p>MotoX3M</p>
+    </a>
+    <a href="motox3m-2.html" class="game-card" data-name="MotoX3M 2">
+      <img src="https://icons-5.org/g4m3s/motox3m/splash.jpg" alt="MotoX3M 2" loading="lazy">
+      <p>MotoX3M 2</p>
+    </a>
+    <a href="motox3m-pool.html" class="game-card" data-name="MotoX3M Pool">
+      <img src="https://icons-5.org/g4m3s/motox3m-pool/splash.jpg" alt="MotoX3M Pool" loading="lazy">
+      <p>MotoX3M Pool</p>
+    </a>
+    <a href="motox3m-spooky.html" class="game-card" data-name="MotoX3M Spooky">
+      <img src="https://icons-5.org/g4m3s/motox3m-spooky/splash.jpeg" alt="MotoX3M Spooky" loading="lazy">
+      <p>MotoX3M Spooky</p>
+    </a>
+    <a href="motox3m-winter.html" class="game-card" data-name="MotoX3M Winter">
+      <img src="https://icons-5.org/g4m3s/motox3m-winter/download.jpeg" alt="MotoX3M Winter" loading="lazy">
+      <p>MotoX3M Winter</p>
+    </a>
+    <a href="mr-bullet.html" class="game-card" data-name="Mr Bullet">
+      <img src="https://icons-5.org/g4m3s/mr-bullet/icon-256.png" alt="Mr Bullet" loading="lazy">
+      <p>Mr Bullet</p>
+    </a>
+    <a href="n-gon.html" class="game-card" data-name="n-gon">
+      <img src="https://icons-5.org/g4m3s/n-gon/bot.png" alt="n-gon" loading="lazy">
+      <p>n-gon</p>
+    </a>
+    <a href="nut-simulator.html" class="game-card" data-name="Nut Simulator">
+      <img src="https://icons-5.org/g4m3s/nut-simulator/NutSimulator.png" alt="Nut Simulator" loading="lazy">
+      <p>Nut Simulator</p>
+    </a>
+    <a href="ovo.html" class="game-card" data-name="OvO">
+      <img src="https://icons-5.org/g4m3s/ovo/ovo.png" alt="OvO" loading="lazy">
+      <p>OvO</p>
+    </a>
+    <a href="ovo-2.html" class="game-card" data-name="OvO 2">
+      <img src="https://icons-5.org/g4m3s/ovo-2/logo.jpg" alt="OvO 2" loading="lazy">
+      <p>OvO 2</p>
+    </a>
+    <a href="ovo-dimensions.html" class="game-card" data-name="OvO Dimensions">
+      <img src="https://icons-5.org/g4m3s/ovo-dimensions/logo.jpg" alt="OvO Dimensions" loading="lazy">
+      <p>OvO Dimensions</p>
+    </a>
+    <a href="paper-io-2.html" class="game-card" data-name="Paper.io 2">
+      <img src="https://icons-5.org/g4m3s/paper-io-2/images/icon512.png" alt="Paper.io 2" loading="lazy">
+      <p>Paper.io 2</p>
+    </a>
+    <a href="paper-io-3.html" class="game-card" data-name="Paper.io 3">
+      <img src="https://icons-5.org/g4m3s/paper-io-3/PaperIo3.png" alt="Paper.io 3" loading="lazy">
+      <p>Paper.io 3</p>
+    </a>
+    <a href="retro-bowl.html" class="game-card" data-name="Retro Bowl">
+      <img src="https://icons-5.org/g4m3s/retro-bowl/img/icon.jpg" alt="Retro Bowl" loading="lazy">
+      <p>Retro Bowl</p>
+    </a>
+    <a href="retro-bowl-college.html" class="game-card" data-name="Retro Bowl College">
+      <img src="https://icons-5.org/g4m3s/retro-bowl-college/unnamed.png" alt="Retro Bowl College" loading="lazy">
+      <p>Retro Bowl College</p>
+    </a>
+    <a href="rise-higher.html" class="game-card" data-name="Rise Higher">
+      <img src="https://icons-5.org/g4m3s/rise-higher/RiseHigher.png" alt="Rise Higher" loading="lazy">
+      <p>Rise Higher</p>
+    </a>
+    <a href="rooftop-snipers.html" class="game-card" data-name="Rooftop Snipers">
+      <img src="https://icons-5.org/g4m3s/rooftop-snipers/img/thumb.png" alt="Rooftop Snipers" loading="lazy">
+      <p>Rooftop Snipers</p>
+    </a>
+    <a href="scrap-metal.html" class="game-card" data-name="Scrap Metal">
+      <img src="https://icons-5.org/g4m3s/scrap-metal/img/splash.png" alt="Scrap Metal" loading="lazy">
+      <p>Scrap Metal</p>
+    </a>
+    <a href="slope.html" class="game-card" data-name="Slope">
+      <img src="https://icons-5.org/g4m3s/slope/slope4.jpeg" alt="Slope" loading="lazy">
+      <p>Slope</p>
+    </a>
+    <a href="slope-2.html" class="game-card" data-name="Slope 2">
+      <img src="https://icons-5.org/g4m3s/slope-2/slope-2-logo.png" alt="Slope 2" loading="lazy">
+      <p>Slope 2</p>
+    </a>
+    <a href="snow-rider-3d.html" class="game-card" data-name="Snow Rider 3D">
+      <img src="https://icons-5.org/g4m3s/snow-ride/logo.jpg" alt="Snow Rider 3D" loading="lazy">
+      <p>Snow Rider 3D</p>
+    </a>
+    <a href="snowbattle.html" class="game-card" data-name="Snowbattle">
+      <img src="https://icons-5.org/g4m3s/snowbattle/img/logo.png" alt="Snowbattle" loading="lazy">
+      <p>Snowbattle</p>
+    </a>
+    <a href="soccer-random.html" class="game-card" data-name="Soccer Random">
+      <img src="https://icons-5.org/g4m3s/soccer-random/unnamed.png" alt="Soccer Random" loading="lazy">
+      <p>Soccer Random</p>
+    </a>
+    <a href="soccer-skills-euro-cup.html" class="game-card" data-name="Soccer Skills Euro Cup">
+      <img src="https://icons-5.org/g4m3s/soccer-skills/splash.png" alt="Soccer Skills Euro Cup" loading="lazy">
+      <p>Soccer Skills Euro Cup</p>
+    </a>
+    <a href="stack.html" class="game-card" data-name="Stack">
+      <img src="https://icons-5.org/g4m3s/stack/stack.png" alt="Stack" loading="lazy">
+      <p>Stack</p>
+    </a>
+    <a href="stick-duel-battle.html" class="game-card" data-name="Stick Duel Battle">
+      <img src="https://icons-5.org/g4m3s/stick-duel-battle/512x512.jpg" alt="Stick Duel Battle" loading="lazy">
+      <p>Stick Duel Battle</p>
+    </a>
+    <a href="stick-merge.html" class="game-card" data-name="Stick Merge">
+      <img src="https://icons-5.org/g4m3s/stick-merge/splash.png" alt="Stick Merge" loading="lazy">
+      <p>Stick Merge</p>
+    </a>
+    <a href="stickman-hook.html" class="game-card" data-name="Stickman Hook">
+      <img src="https://icons-5.org/g4m3s/stickman-hook/unnamed.jpg" alt="Stickman Hook" loading="lazy">
+      <p>Stickman Hook</p>
+    </a>
+    <a href="subway-surfers.html" class="game-card" data-name="Subway Surfers">
+      <img src="https://icons-5.org/g4m3s/subway-surfers/img/splash.jpg" alt="Subway Surfers" loading="lazy">
+      <p>Subway Surfers</p>
+    </a>
+    <a href="subway-surfers-new-york.html" class="game-card" data-name="Subway Surfers New York">
+      <img src="https://icons-5.org/g4m3s/subway-surfers-ny/NewYorkIcon.png" alt="Subway Surfers New York" loading="lazy">
+      <p>Subway Surfers New York</p>
+    </a>
+    <a href="super-mario-64.html" class="game-card" data-name="Super Mario 64">
+      <img src="https://icons-5.org/g4m3s/super-mario-64/logo.jfif" alt="Super Mario 64" loading="lazy">
+      <p>Super Mario 64</p>
+    </a>
+    <a href="superhot.html" class="game-card" data-name="Superhot">
+      <img src="https://icons-5.org/g4m3s/superhot/hot.jpg" alt="Superhot" loading="lazy">
+      <p>Superhot</p>
+    </a>
+    <a href="tag.html" class="game-card" data-name="Tag">
+      <img src="https://icons-5.org/g4m3s/tag/logo.jpg" alt="Tag" loading="lazy">
+      <p>Tag</p>
+    </a>
+    <a href="tanuki-sunset.html" class="game-card" data-name="Tanuki Sunset">
+      <img src="https://icons-5.org/g4m3s/tanuki-sunset/img/logo.png" alt="Tanuki Sunset" loading="lazy">
+      <p>Tanuki Sunset</p>
+    </a>
+    <a href="temple-run-2.html" class="game-card" data-name="Temple Run 2">
+      <img src="https://icons-5.org/g4m3s/temple-run-2/img/og-icon.png" alt="Temple Run 2" loading="lazy">
+      <p>Temple Run 2</p>
+    </a>
+    <a href="territorial.html" class="game-card" data-name="Territorial">
+      <img src="https://icons-5.org/g4m3s/territorial/Territorial.png" alt="Territorial" loading="lazy">
+      <p>Territorial</p>
+    </a>
+    <a href="there-is-no-game.html" class="game-card" data-name="There is No Game">
+      <img src="https://icons-5.org/g4m3s/there-is-no-game/logo.png" alt="There is No Game" loading="lazy">
+      <p>There is No Game</p>
+    </a>
+    <a href="tiny-fishing.html" class="game-card" data-name="Tiny Fishing">
+      <img src="https://icons-5.org/g4m3s/tiny-fishing/thumb.png" alt="Tiny Fishing" loading="lazy">
+      <p>Tiny Fishing</p>
+    </a>
+    <a href="toss-the-turtle.html" class="game-card" data-name="Toss the Turtle">
+      <img src="https://icons-5.org/g4m3s/toss-the-turtle/tosstheturtle.png" alt="Toss the Turtle" loading="lazy">
+      <p>Toss the Turtle</p>
+    </a>
+    <a href="tunnel-rush.html" class="game-card" data-name="Tunnel Rush">
+      <img src="https://icons-5.org/g4m3s/tunnel-rush/img/tunnel.jpg" alt="Tunnel Rush" loading="lazy">
+      <p>Tunnel Rush</p>
+    </a>
+    <a href="volley-random.html" class="game-card" data-name="Volley Random">
+      <img src="https://icons-5.org/g4m3s/volley-random/splash.png" alt="Volley Random" loading="lazy">
+      <p>Volley Random</p>
+    </a>
+    <a href="wordle.html" class="game-card" data-name="Wordle">
+      <img src="https://icons-5.org/g4m3s/wordle/img/logo_192x192.png" alt="Wordle" loading="lazy">
+      <p>Wordle</p>
+    </a>
+    <a href="worlds-hardest-game.html" class="game-card" data-name="World's Hardest Game">
+      <img src="https://icons-5.org/g4m3s/worlds-hardest-game/images/splash.jpg" alt="World's Hardest Game" loading="lazy">
+      <p>World's Hardest Game</p>
+    </a>
+</div>
+<p class="no-results" id="noResults">No games matched your search.</p>
+
+<section class="game-page" style="margin-top:6px;">
+  <div class="article">
+    <h2>What's Sunset Arcade about?</h2>
+    <p>Sunset Arcade is a small collection of browser games meant for exactly this — a quick break. No installs, no accounts, just tiles you click and games that load right away. The search bar up top filters as you type, so finding a specific title is fast.</p>
+    <h2>How things are organized</h2>
+    <p>Instead of digging through menus, Sunset Arcade keeps everything on one page. Sports sit next to puzzles, racing sits next to clickers — it's meant to be skimmed, not browsed like a catalog. Know the name already? Search beats clicking around every time.</p>
+    <h2>No downloads, ever</h2>
+    <p>Everything here runs inside the browser tab. That keeps it quick on shared or restricted computers — nothing to install, nothing left behind once you close the tab. How smooth it runs still comes down to your own device and connection.</p>
+    <h2>Got a suggestion?</h2>
+    <p>This grid keeps growing. If there's a browser game you'd like to see here, drop a note through the Contact page.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  &copy; <span id="year"></span> Sunset Arcade &middot; Free browser games, no downloads
+  <div class="footer-links">
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+    <a href="privacy-policy.html">Privacy Policy</a>
+    <a href="terms.html">Terms of Service</a>
+    <a href="dmca.html">DMCA</a>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
