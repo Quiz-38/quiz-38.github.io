@@ -45,8 +45,10 @@ a { color: inherit; }
 .no-results { text-align: center; color: var(--text-dim); padding: 40px 0; display: none; }
 
 .game-page { max-width: 1000px; margin: 24px auto 60px; padding: 0 18px; }
-.game-frame-wrap { border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: #000; box-shadow: 0 20px 50px rgba(0,0,0,0.45); }
+.game-frame-wrap { position: relative; border: 1px solid var(--border); border-radius: var(--radius); overflow: hidden; background: #000; box-shadow: 0 20px 50px rgba(0,0,0,0.45); }
 .game-frame-wrap iframe { width: 100%; height: 70vh; min-height: 420px; border: none; display: block; }
+.fullscreen-btn { position: absolute; top: 10px; right: 10px; z-index: 2; width: 38px; height: 38px; border-radius: calc(var(--radius) - 2px); border: 1px solid var(--border); background: rgba(0,0,0,0.55); color: var(--text); font-size: 17px; line-height: 1; cursor: pointer; display: flex; align-items: center; justify-content: center; backdrop-filter: blur(4px); transition: background 0.15s ease, color 0.15s ease, transform 0.15s ease; }
+.fullscreen-btn:hover { background: var(--accent); color: #05060a; transform: scale(1.06); }
 .game-title-row { display: flex; align-items: center; gap: 14px; margin: 18px 0 8px; }
 .game-title-row img { width: 52px; height: 52px; border-radius: var(--radius); object-fit: cover; }
 .game-title-row h1 { font-family: 'Baloo 2', sans-serif; font-size: 22px; margin: 0; letter-spacing: 0.3px; }

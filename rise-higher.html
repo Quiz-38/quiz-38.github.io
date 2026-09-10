@@ -30,7 +30,8 @@
 
 <div class="game-page">
   <div class="game-frame-wrap">
-    <iframe src="https://icons-5.org/g4m3s/rise-higher/game.html" allowfullscreen loading="lazy"></iframe>
+    <button class="fullscreen-btn" type="button" onclick="toggleGameFullscreen()" aria-label="Fullscreen" title="Fullscreen">⛶</button>
+    <iframe id="gameFrame" src="https://icons-5.org/g4m3s/rise-higher/game.html" allowfullscreen loading="lazy"></iframe>
   </div>
   <div class="game-title-row">
     <img src="https://icons-5.org/g4m3s/rise-higher/RiseHigher.png" alt="Rise Higher">
@@ -51,6 +52,16 @@
   <p><strong>Can I play Rise Higher at school or work?</strong><br>Rise Higher is lightweight and browser-based, so it usually runs fine on Chromebooks and standard work computers, though local network rules can vary.</p>
 </div>
 </div>
+<script>
+function toggleGameFullscreen() {
+  var el = document.getElementById('gameFrame');
+  if (!document.fullscreenElement) {
+    (el.requestFullscreen || el.webkitRequestFullscreen || el.msRequestFullscreen).call(el);
+  } else {
+    (document.exitFullscreen || document.webkitExitFullscreen || document.msExitFullscreen).call(document);
+  }
+}
+</script>
 <footer class="site-footer">
   &copy; <span id="year"></span> Quiz-38 &middot; Free browser games, no downloads
   <div class="footer-links">
